@@ -1,0 +1,2 @@
+import r from"react";const e=async(e,s)=>{const{setPostBodyComponents:i}=e;if(!s.prismicToolbar)return;let c;switch(s.prismicToolbar){case!0:c=`//static.cdn.prismic.io/prismic.js?repo=${s.repositoryName}&new=true`;break;case"legacy":c="//static.cdn.prismic.io/prismic.js?repo="+s.repositoryName}i([r.createElement("script",{src:c,defer:!0})])};export{e as onRenderBody};
+//# sourceMappingURL=gatsby-ssr.modern.js.map

@@ -1,0 +1,2 @@
+import i from"md5";import o from"lodash.omit";const s=(s,m)=>{"legacy"===m.prismicToolbar&&(window.prismic={endpoint:`https://${m.repositoryName}.cdn.prismic.io/api/v2`}),window.__GATSBY_SOURCE_PRISMIC__=Object.assign({},window.__GATSBY_SOURCE_PRISMIC__,{[m.repositoryName]:{pluginOptions:o(m,["schemas","plugins"]),schemasDigest:i(JSON.stringify(m.schemas))}})};export{s as onClientEntry};
+//# sourceMappingURL=gatsby-browser.modern.js.map

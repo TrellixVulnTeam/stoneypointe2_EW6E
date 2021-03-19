@@ -1,0 +1,11 @@
+import { SourceNodesArgs } from 'gatsby';
+import { WebhookBase, PluginOptions, PrismicWebhook, TypePath } from 'types';
+import { Document as PrismicDocument } from 'prismic-javascript/d.ts/documents';
+declare type maybeWebhook = WebhookBase | any;
+export declare function validateSecret(pluginOptions: PluginOptions, webhookBody: maybeWebhook): boolean;
+export declare function isPrismicUrl(url: string | undefined): boolean;
+export declare function isPrismicWebhook(webhookBody: maybeWebhook): boolean;
+export declare function handleWebhook(pluginOptions: PluginOptions, gatsbyContext: SourceNodesArgs, typePaths: TypePath[], webhook: PrismicWebhook): Promise<void>;
+export declare function handleWebhookUpdates(pluginOptions: PluginOptions, gatsbyContext: SourceNodesArgs, typePaths: TypePath[], documents: PrismicDocument[]): Promise<void>;
+export declare function handleWebhookDeletions(gatsbyContext: SourceNodesArgs, documents: string[]): Promise<void>;
+export {};

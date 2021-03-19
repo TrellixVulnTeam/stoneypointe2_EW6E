@@ -1,0 +1,2 @@
+function i(i){return i&&"object"==typeof i&&"default"in i?i.default:i}var e=i(require("md5")),s=i(require("lodash.omit"));exports.onClientEntry=(i,o)=>{"legacy"===o.prismicToolbar&&(window.prismic={endpoint:"https://"+o.repositoryName+".cdn.prismic.io/api/v2"}),window.__GATSBY_SOURCE_PRISMIC__=Object.assign({},window.__GATSBY_SOURCE_PRISMIC__,{[o.repositoryName]:{pluginOptions:s(o,["schemas","plugins"]),schemasDigest:e(JSON.stringify(o.schemas))}})};
+//# sourceMappingURL=gatsby-browser.js.map
